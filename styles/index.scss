@@ -1,0 +1,22 @@
+@import "./moduls/fonts";
+@import "./moduls/variables";
+
+body {
+  font-family: $font-family;
+}
+
+.container {
+  width: 1170px;
+  margin: 0 auto;
+}
+
+%flexible {
+  display: flex;
+}
+
+header {
+  .container {
+    @extend %flexible;
+    justify-content: space-between;
+  }
+}
